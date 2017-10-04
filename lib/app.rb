@@ -10,6 +10,9 @@ class SinatraApp < Sinatra::Base
   # Your App's Home page
   # this is a simple example that fetches some products
   # from Shopify and displays them inside your app
+  get '/search' do
+    erb :search
+  end
   get '/' do
     shopify_session do
       @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })

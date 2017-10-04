@@ -123,6 +123,7 @@ DEPENDENCIES
   rack-flash3
   rack-test
   rake
+  resque
   shopify-sinatra-app (~> 0.3.3)
   sinatra-activerecord
   sqlite3

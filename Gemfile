@@ -4,6 +4,7 @@ ruby '2.3.1'
 gem 'shopify-sinatra-app', '~> 0.3.3'
 gem 'sinatra-activerecord'
 gem 'rack-flash3', require: 'rack-flash'
+gem 'resque'
 
 group :production do
   gem 'pg'
